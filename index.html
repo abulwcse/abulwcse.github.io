@@ -1,74 +1,249 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Coming Soon</title>
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
-    body {
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-      min-height: 100vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      background: linear-gradient(135deg, #0f172a 0%, #1e293b 50%, #0f172a 100%);
-      color: #e2e8f0;
-      text-align: center;
-      padding: 2rem;
-    }
-
-    .container {
-      max-width: 600px;
-    }
-
-    h1 {
-      font-size: clamp(2.5rem, 8vw, 4.5rem);
-      font-weight: 700;
-      letter-spacing: -0.02em;
-      background: linear-gradient(90deg, #38bdf8, #818cf8, #c084fc);
-      -webkit-background-clip: text;
-      background-clip: text;
-      -webkit-text-fill-color: transparent;
-      margin-bottom: 1rem;
-    }
-
-    p {
-      font-size: clamp(1rem, 3vw, 1.25rem);
-      color: #94a3b8;
-      line-height: 1.6;
-    }
-
-    .dot {
-      display: inline-block;
-      animation: blink 1.4s infinite both;
-    }
-
-    .dot:nth-child(2) { animation-delay: 0.2s; }
-    .dot:nth-child(3) { animation-delay: 0.4s; }
-
-    @keyframes blink {
-      0%, 80%, 100% { opacity: 0.2; }
-      40% { opacity: 1; }
-    }
-
-    footer {
-      margin-top: 3rem;
-      font-size: 0.875rem;
-      color: #475569;
-    }
-  </style>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
 </head>
 <body>
-  <div class="container">
-    <h1>Coming Soon</h1>
-    <p>Something new is on the way<span class="dot">.</span><span class="dot">.</span><span class="dot">.</span></p>
-    <footer>&copy; 2026 Abul Hussain</footer>
-  </div>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  body { margin: 0; background: #0d1210; }
+  a { color: #8fb89a; text-decoration: none; }
+  a:hover { color: #b7d6bf; }
+  ::selection { background: #8fb89a; color: #0d1210; }
+  @keyframes fadeUp { from { opacity: 0; transform: translateY(14px); } to { opacity: 1; transform: translateY(0); } }
+</style>
+</helmet>
+<div style="background:#0d1210;color:#eef2ee;font-family:'Space Grotesk',sans-serif;min-height:100vh;position:relative;" data-root="1">
+  <div style="position:fixed;inset:0;z-index:-1;pointer-events:none;background-image:radial-gradient(circle at 12% -8%, rgba(143,184,154,0.22), transparent 42%), radial-gradient(circle at 100% 30%, rgba(143,184,154,0.08), transparent 40%), repeating-linear-gradient(0deg, rgba(255,255,255,0.035) 0px, rgba(255,255,255,0.035) 1px, transparent 1px, transparent 56px), repeating-linear-gradient(90deg, rgba(255,255,255,0.035) 0px, rgba(255,255,255,0.035) 1px, transparent 1px, transparent 56px);"></div>
+
+  <nav style="position:sticky;top:0;z-index:50;display:flex;align-items:center;justify-content:space-between;padding:18px 48px;background:rgba(13,18,16,0.85);backdrop-filter:blur(10px);border-bottom:1px solid rgba(255,255,255,0.08);">
+    <div style="font-family:'IBM Plex Mono',monospace;font-size:15px;font-weight:600;letter-spacing:0.02em;">abul<span style="color:#8fb89a;">@</span>wcse</div>
+    <div style="display:flex;gap:28px;font-family:'IBM Plex Mono',monospace;font-size:13px;color:rgba(238,242,238,0.7);">
+      <a href="#experience" style="color:inherit;">experience</a>
+      <a href="#skills" style="color:inherit;">skills</a>
+      <a href="#projects" style="color:inherit;">projects</a>
+      <a href="#contact" style="color:inherit;">contact</a>
+    </div>
+  </nav>
+
+  <header style="max-width:1040px;margin:0 auto;padding:140px 48px 100px;position:relative;animation:fadeUp 0.7s ease both;">
+    <div style="position:absolute;top:60px;right:48px;font-family:'IBM Plex Mono',monospace;font-size:220px;font-weight:700;color:rgba(143,184,154,0.05);line-height:1;user-select:none;pointer-events:none;">AH</div>
+    <div style="display:flex;align-items:center;gap:12px;font-family:'IBM Plex Mono',monospace;font-size:14px;color:#8fb89a;margin-bottom:28px;">
+      <span style="width:8px;height:8px;border-radius:50%;background:#8fb89a;box-shadow:0 0 12px 2px rgba(143,184,154,0.6);"></span>
+      open to senior / staff IC roles — leicester, uk
+    </div>
+    <h1 style="font-size:76px;line-height:1.02;font-weight:700;margin:0 0 24px;letter-spacing:-0.02em;position:relative;">
+      Abul Hassan<br/>
+      <span style="color:#8fb89a;">Anwar Hussain</span>
+    </h1>
+    <p style="font-family:'IBM Plex Mono',monospace;font-size:18px;color:rgba(238,242,238,0.75);margin:0 0 32px;padding-left:20px;border-left:2px solid rgba(143,184,154,0.4);">Senior Software Engineer<br/>Go &amp; distributed systems</p>
+    <p style="font-size:19px;line-height:1.65;color:rgba(238,242,238,0.85);max-width:680px;margin:0 0 40px;">
+      15+ years backend engineering, 4+ years running distributed Go microservices in production. I like taking a problem from
+      design through to a working system without handing off halfway — comfortable in infrastructure (Kubernetes, Terraform, GitOps)
+      as much as application code. Given a fragile or under-owned part of a platform, I'll usually end up fixing it. Looking for a
+      senior or staff IC role.
+    </p>
+    <div style="display:flex;gap:16px;flex-wrap:wrap;margin-bottom:56px;">
+      <a href="mailto:abul.cse@gmail.com" style="font-family:'IBM Plex Mono',monospace;font-size:14px;padding:12px 22px;background:#8fb89a;color:#0d1210;border-radius:2px;font-weight:600;">Email me</a>
+      <a href="https://github.com/abulwcse" target="_blank" style="font-family:'IBM Plex Mono',monospace;font-size:14px;padding:12px 22px;border:1px solid rgba(255,255,255,0.15);border-radius:2px;color:#eef2ee;">GitHub</a>
+      <a href="https://linkedin.com/in/abulwcse" target="_blank" style="font-family:'IBM Plex Mono',monospace;font-size:14px;padding:12px 22px;border:1px solid rgba(255,255,255,0.15);border-radius:2px;color:#eef2ee;">LinkedIn</a>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:24px;border-top:1px solid rgba(255,255,255,0.1);padding-top:32px;">
+      <sc-for list="{{ stats }}" as="stat" hint-placeholder-count="4">
+        <div>
+          <div style="font-size:32px;font-weight:700;color:#8fb89a;margin-bottom:4px;">{{ stat.value }}</div>
+          <div style="font-family:'IBM Plex Mono',monospace;font-size:13px;color:rgba(238,242,238,0.6);">{{ stat.label }}</div>
+        </div>
+      </sc-for>
+    </div>
+  </header>
+
+  <section id="experience" style="max-width:960px;margin:0 auto;padding:80px 48px 120px;border-top:1px solid rgba(255,255,255,0.08);">
+    <div style="display:flex;align-items:baseline;gap:16px;margin-bottom:8px;">
+      <span style="font-family:'IBM Plex Mono',monospace;font-size:14px;color:rgba(143,184,154,0.5);">01</span>
+      <h2 style="font-family:'IBM Plex Mono',monospace;font-size:14px;letter-spacing:0.08em;text-transform:uppercase;color:#8fb89a;margin:0;">Experience</h2>
+      <span style="flex:1;height:1px;background:rgba(255,255,255,0.08);"></span>
+    </div>
+    <p style="font-size:15px;color:rgba(238,242,238,0.55);margin:0 0 56px;">15+ years shipping and running backend systems.</p>
+    <sc-for list="{{ jobs }}" as="job" hint-placeholder-count="3">
+      <div style="display:grid;grid-template-columns:230px 1fr;gap:36px;padding-bottom:64px;margin-bottom:64px;border-bottom:1px solid rgba(255,255,255,0.06);">
+        <div>
+          <div style="font-family:'IBM Plex Mono',monospace;font-size:13px;color:rgba(238,242,238,0.55);margin-bottom:10px;">{{ job.period }}</div>
+          <div style="font-size:22px;font-weight:700;margin-bottom:6px;">{{ job.company }}</div>
+          <div style="font-family:'IBM Plex Mono',monospace;font-size:13px;color:rgba(238,242,238,0.6);">{{ job.location }}</div>
+        </div>
+        <div>
+          <div style="font-size:19px;font-weight:600;color:#8fb89a;margin-bottom:20px;">{{ job.title }}</div>
+          <sc-for list="{{ job.bullets }}" as="bullet" hint-placeholder-count="5">
+            <div style="display:flex;gap:14px;margin-bottom:16px;font-size:17px;line-height:1.6;color:rgba(238,242,238,0.9);">
+              <span style="color:#8fb89a;flex-shrink:0;">›</span>
+              <span>
+                <sc-if value="{{ bullet.metric }}" hint-placeholder-val="{{ false }}">
+                  <span style="font-family:'IBM Plex Mono',monospace;font-size:13px;font-weight:600;color:#0d1210;background:#8fb89a;padding:2px 8px;border-radius:2px;margin-right:8px;">{{ bullet.metric }}</span>
+                </sc-if>
+                {{ bullet.text }}
+              </span>
+            </div>
+          </sc-for>
+        </div>
+      </div>
+    </sc-for>
+  </section>
+
+  <section id="skills" style="max-width:920px;margin:0 auto;padding:0 48px 100px;">
+    <div style="display:flex;align-items:baseline;gap:16px;margin-bottom:48px;">
+      <span style="font-family:'IBM Plex Mono',monospace;font-size:14px;color:rgba(143,184,154,0.5);">02</span>
+      <h2 style="font-family:'IBM Plex Mono',monospace;font-size:14px;letter-spacing:0.08em;text-transform:uppercase;color:#8fb89a;margin:0;">Skills</h2>
+      <span style="flex:1;height:1px;background:rgba(255,255,255,0.08);"></span>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:36px;">
+      <sc-for list="{{ skillGroups }}" as="group" hint-placeholder-count="6">
+        <div>
+          <div style="font-family:'IBM Plex Mono',monospace;font-size:13px;color:rgba(238,242,238,0.55);margin-bottom:12px;">{{ group.label }}</div>
+          <div style="display:flex;flex-wrap:wrap;gap:8px;">
+            <sc-for list="{{ group.items }}" as="item" hint-placeholder-count="5">
+              <span style="font-family:'IBM Plex Mono',monospace;font-size:13px;padding:6px 12px;border:1px solid rgba(255,255,255,0.12);border-radius:2px;color:rgba(238,242,238,0.85);">{{ item }}</span>
+            </sc-for>
+          </div>
+        </div>
+      </sc-for>
+    </div>
+  </section>
+
+  <section id="projects" style="max-width:920px;margin:0 auto;padding:60px 48px 100px;border-top:1px solid rgba(255,255,255,0.08);">
+    <div style="display:flex;align-items:baseline;gap:16px;margin-bottom:48px;">
+      <span style="font-family:'IBM Plex Mono',monospace;font-size:14px;color:rgba(143,184,154,0.5);">03</span>
+      <h2 style="font-family:'IBM Plex Mono',monospace;font-size:14px;letter-spacing:0.08em;text-transform:uppercase;color:#8fb89a;margin:0;">Notable Projects</h2>
+      <span style="flex:1;height:1px;background:rgba(255,255,255,0.08);"></span>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:24px;">
+      <sc-for list="{{ projects }}" as="proj" hint-placeholder-count="2">
+        <div style="background:#161c19;border:1px solid rgba(255,255,255,0.08);border-top:2px solid #8fb89a;border-radius:2px;padding:28px;position:relative;overflow:hidden;">
+          <div style="position:absolute;top:-10px;right:12px;font-family:'IBM Plex Mono',monospace;font-size:64px;color:rgba(143,184,154,0.06);font-weight:700;">{{ $index }}</div>
+          <div style="font-size:18px;font-weight:600;margin-bottom:12px;">{{ proj.name }}</div>
+          <div style="font-size:15px;line-height:1.6;color:rgba(238,242,238,0.8);margin-bottom:16px;">{{ proj.desc }}</div>
+          <a href="{{ proj.link }}" target="_blank" style="font-family:'IBM Plex Mono',monospace;font-size:13px;">{{ proj.linkLabel }} →</a>
+        </div>
+      </sc-for>
+    </div>
+  </section>
+
+  <section id="education" style="max-width:920px;margin:0 auto;padding:0 48px 100px;">
+    <div style="display:flex;align-items:baseline;gap:16px;margin-bottom:48px;">
+      <span style="font-family:'IBM Plex Mono',monospace;font-size:14px;color:rgba(143,184,154,0.5);">04</span>
+      <h2 style="font-family:'IBM Plex Mono',monospace;font-size:14px;letter-spacing:0.08em;text-transform:uppercase;color:#8fb89a;margin:0;">Education &amp; Certifications</h2>
+      <span style="flex:1;height:1px;background:rgba(255,255,255,0.08);"></span>
+    </div>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:36px;">
+      <div>
+        <div style="font-family:'IBM Plex Mono',monospace;font-size:13px;color:rgba(238,242,238,0.55);margin-bottom:8px;">2013 – 2015</div>
+        <div style="font-size:17px;font-weight:600;margin-bottom:4px;">MSc, Computer Engineering</div>
+        <div style="font-size:15px;color:rgba(238,242,238,0.75);">University of Leicester, UK</div>
+      </div>
+      <div>
+        <div style="font-family:'IBM Plex Mono',monospace;font-size:13px;color:rgba(238,242,238,0.55);margin-bottom:8px;">Certifications</div>
+        <div style="font-size:15px;line-height:1.7;color:rgba(238,242,238,0.85);">
+          Advanced Golang (KodeKloud) · Claude Code 101 · Claude Platform 101 · AI Fluency: Framework &amp; Foundations · Claude Code in Action (Anthropic)
+        </div>
+        <div style="font-family:'IBM Plex Mono',monospace;font-size:13px;color:rgba(238,242,238,0.55);margin:20px 0 8px;">Publication</div>
+        <div style="font-size:15px;line-height:1.6;color:rgba(238,242,238,0.85);">"Frustrate Twitter from automation: How far a user can be trusted?"</div>
+      </div>
+    </div>
+  </section>
+
+  <footer id="contact" style="border-top:1px solid rgba(255,255,255,0.08);padding:100px 48px;">
+    <div style="max-width:920px;margin:0 auto;">
+      <div style="display:flex;align-items:baseline;gap:16px;margin-bottom:24px;">
+        <span style="font-family:'IBM Plex Mono',monospace;font-size:14px;color:rgba(143,184,154,0.5);">05</span>
+        <h2 style="font-family:'IBM Plex Mono',monospace;font-size:14px;letter-spacing:0.08em;text-transform:uppercase;color:#8fb89a;margin:0;">Get in touch</h2>
+        <span style="flex:1;height:1px;background:rgba(255,255,255,0.08);"></span>
+      </div>
+      <a href="mailto:abul.cse@gmail.com" style="display:block;font-size:52px;font-weight:700;margin-bottom:32px;color:#eef2ee;letter-spacing:-0.01em;">abul.cse<span style="color:#8fb89a;">@</span>gmail.com</a>
+      <div style="display:flex;gap:28px;flex-wrap:wrap;font-family:'IBM Plex Mono',monospace;font-size:14px;color:rgba(238,242,238,0.7);">
+        <a href="https://github.com/abulwcse" target="_blank" style="color:inherit;">github.com/abulwcse</a>
+        <a href="https://linkedin.com/in/abulwcse" target="_blank" style="color:inherit;">linkedin.com/in/abulwcse</a>
+        <span>+44 7466 289015</span>
+        <span>Leicester, UK</span>
+      </div>
+    </div>
+  </footer>
+
+</div>
+
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+class Component extends DCLogic {
+  renderVals() {
+    return {
+      stats: [
+        { value: "15+", label: "years backend engineering" },
+        { value: "4+", label: "years Go in production" },
+        { value: "6", label: "microservices founded & run" },
+        { value: "9x", label: "pipeline runtime cut" }
+      ],
+      jobs: [
+        {
+          period: "Mar 2023 – Present",
+          company: "NatureMetrics",
+          location: "Guildford, UK",
+          title: "Senior Software Engineer",
+          bullets: [
+            { metric: "6 services", text: "Founding backend engineer; built 6 Go microservices (GraphQL, REST, gRPC/Protobuf) on MySQL, MongoDB and Neo4j, plus the AWS platform they run on (ECS, EKS, S3, Lambda, SES, SNS, Cognito)." },
+            { metric: "2 → 6", text: "Led the move from HTTP to gRPC/Protobuf to fix contract drift between services — it became the standard as the service count grew." },
+            { metric: null, text: "Traced a transient 503 to silent EKS autoscaling failure blocking new nodes; fixed the configuration and added alerting." },
+            { metric: "~9x faster", text: "Built a stateless Go orchestrator for a geospatial pipeline: resumable via S3 state, priority preemption, per-job isolation. Cut a 500km² run from ~6 hours to ~40 minutes." },
+            { metric: null, text: "Introduced CI/CD via Argo CD and integration testing with Testcontainers where neither existed before." },
+            { metric: "1,000 projects", text: "Shipped precomputed sorting to scale filtering for a customer at this scale, reworking the requirement with product rather than forking a special case." },
+            { metric: null, text: "Mentored engineers into the gRPC microservices architecture, and other teams onto self-service Helm/Argo deploys." }
+          ]
+        },
+        {
+          period: "Feb 2022 – Mar 2023",
+          company: "OnBuy.com",
+          location: "Bournemouth, UK",
+          title: "Senior Software Engineer",
+          bullets: [
+            { metric: null, text: "Built buyer protection and cashback as new Laravel microservices, moving off the ageing PHP monolith." },
+            { metric: null, text: "Integrated PayPal Pay in 3 into checkout, handling partial/failed payments and reconciliation." },
+            { metric: null, text: "Shaped SLA and cashback policy in cross-functional design discussions with product." },
+            { metric: null, text: "Replaced a shared dev database with a Dockerised local environment for the engineering team." }
+          ]
+        },
+        {
+          period: "Jun 2014 – Feb 2022",
+          company: "Jadu",
+          location: "Leicester, UK",
+          title: "Graduate → Software Engineer → Senior Software Engineer",
+          bullets: [
+            { metric: "200+ orgs", text: "Nearly 8 years building Jadu CMS, used by UK public sector organisations including councils and universities." },
+            { metric: null, text: "Technical lead for the core product team, guiding two engineers and two testers." },
+            { metric: "~33% faster", text: "Led the CMS theming rebuild from raw PHP/HTML to Symfony components, cutting theme build time by roughly a third." },
+            { metric: null, text: "Built Meteor, a packaging/deployment tool adopted company-wide, replacing per-project bash scripts." },
+            { metric: null, text: "Delivered developer training and an online course still live in Jadu Academy." },
+            { metric: null, text: "Escalation point for product issues front-line support couldn't resolve." }
+          ]
+        }
+      ],
+      skillGroups: [
+        { label: "Languages", items: ["Go", "Node.js", "PHP", "Python", "SQL", "Bash"] },
+        { label: "Backend", items: ["Distributed systems", "gRPC / Protobuf", "Event-driven architecture", "REST", "GraphQL"] },
+        { label: "Databases", items: ["PostgreSQL", "Neo4j", "MongoDB", "MySQL", "MSSQL", "BigQuery", "Redis"] },
+        { label: "Infrastructure", items: ["Kubernetes (EKS)", "Terraform", "Helm", "ArgoCD", "Karpenter"] },
+        { label: "Observability", items: ["OpenTelemetry", "Prometheus", "Grafana", "Better Stack"] },
+        { label: "CI/CD & Cloud", items: ["GitHub Actions", "AWS", "GCS", "Docker"] }
+      ],
+      projects: [
+        { name: "SmartLayBy", desc: "Route-aware pit-stop planner with an AI chat agent (Go API + React). Geocodes a journey, interpolates position along the route at each target time, and surfaces nearby places.", link: "https://github.com/abulwcse", linkLabel: "View on GitHub" },
+        { name: "GraphDB for Neo4j", desc: "Published JetBrains IDE plugin (Plugin ID 30979, Kotlin / IntelliJ Platform SDK) for working with Neo4j databases in-editor.", link: "https://github.com/abulwcse", linkLabel: "View on GitHub" }
+      ]
+    };
+  }
+}
+</script>
 </body>
 </html>
